@@ -92,4 +92,3 @@ Should Upload File
     Click Element    ${UPLOAD_SINGLE_FILE_BUTTON}
     ${status}    Get Text    ${SINGLE_FILE_STATUS_TEXT}
     Should Contain    ${status}    Single file selected: google.pdf
-    Sleep    30s
