@@ -1,0 +1,8 @@
+out/*
+log/
+__pycache__/
+.pabotsuitenames
+interactive_console_output.xml
+output.xml
+playwright-log.txt
+.DS_Store
