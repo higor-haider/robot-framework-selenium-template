@@ -9,7 +9,6 @@ Resource            ./home_page_locators.resource
 *** Keywords ***
 Should Validate Page Loaded
     [Documentation]    Validates the page is loaded
-    ${name}    Name
     Wait Until Element Is Visible    ${TITLE_TEXT}
 
 Should Fill Name
