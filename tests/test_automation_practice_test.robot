@@ -3,7 +3,7 @@ Documentation       This file contains test automation practice test cases
 
 Resource            ../resources/features/test_automation_practice/home_page_keywords.resource
 
-Suite Setup         Open Browser And Navigate To Testing The URL    ${TEST_AUTOMATION_PRACTICE_URL}
+Test Setup          Open Browser And Navigate To Testing The URL    ${TEST_AUTOMATION_PRACTICE_URL}
 
 
 *** Test Cases ***
