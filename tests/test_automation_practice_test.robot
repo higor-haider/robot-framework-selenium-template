@@ -7,19 +7,9 @@ Suite Setup         Open Browser And Navigate To Testing The URL    ${TEST_AUTOM
 
 
 *** Test Cases ***
-Fill Form
-    [Documentation]    This test case fills the form
-    Should Fill Name
-    Should Fill Email
-    Should Fill Phone
-    Should Should Select Gender
-    Should Select Days
-    Should Select Country
-    Should Select Colors
-    Should Select Animals
-    Should Fill Date Picker 1
-    Should Fill Date Picker 2
-    Should Fill Date Picker 3
-    Should Click Submit Button
-    Should Validate Days Between Range
-    Should Upload File
+Fill And Validate Form
+    [Documentation]    This test case fills the form and validates that it is filled correctly
+    [Tags]    test-auto-practice
+    Given the user has the home page loaded
+    When the user fills the GUI elements form
+    Then the user can validate the form is filled correctly

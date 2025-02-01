@@ -23,5 +23,6 @@ ${SATURDAY_CHECKBOX}                    id=saturday
 ${SINGLE_FILE_STATUS_TEXT}              id=singleFileStatus
 ${SUBMIT_BUTTON}                        xpath=//button[@class="submit-btn"]
 ${SUNDAY_CHECKBOX}                      id=sunday
+${TITLE_TEXT}                           xpath=//h1[contains(text(),"Automation Testing Practice")]
 ${UPLOAD_FILE_INPUT}                    id=singleFileInput
 ${UPLOAD_SINGLE_FILE_BUTTON}            xpath=//button[text()="Upload Single File"]

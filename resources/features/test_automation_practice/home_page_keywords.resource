@@ -7,6 +7,11 @@ Resource            ./home_page_locators.resource
 
 
 *** Keywords ***
+Should Validate Page Loaded
+    [Documentation]    Validates the page is loaded
+    ${name}    Name
+    Wait Until Element Is Visible    ${TITLE_TEXT}
+
 Should Fill Name
     [Documentation]    Fills the name input
     ${name}    Name
@@ -90,5 +95,33 @@ Should Upload File
     Wait Until Element Is Visible    ${UPLOAD_FILE_INPUT}
     Choose File    ${UPLOAD_FILE_INPUT}    ${EXECDIR}/resources/files/google.pdf
     Click Element    ${UPLOAD_SINGLE_FILE_BUTTON}
+
+Should Validate Uploaded File Successfully
+    [Documentation]    Validates the file was uploaded successfully
     ${status}    Get Text    ${SINGLE_FILE_STATUS_TEXT}
     Should Contain    ${status}    Single file selected: google.pdf
+
+Given the user has the home page loaded
+    [Documentation]    Given the user has the home page loaded
+    Should Validate Page Loaded
+
+When the user fills the GUI elements form
+    [Documentation]    When the user fills the gui elements form
+    Should Fill Name
+    Should Fill Email
+    Should Fill Phone
+    Should Should Select Gender
+    Should Select Days
+    Should Select Country
+    Should Select Colors
+    Should Select Animals
+    Should Fill Date Picker 1
+    Should Fill Date Picker 2
+    Should Fill Date Picker 3
+    Should Click Submit Button
+    Should Upload File
+
+Then the user can validate the form is filled correctly
+    [Documentation]    Then the user can validate the form is filled correctly
+    Should Validate Days Between Range
+    Should Validate Uploaded File Successfully
