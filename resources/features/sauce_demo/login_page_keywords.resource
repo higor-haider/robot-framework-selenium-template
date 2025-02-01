@@ -46,3 +46,10 @@ And the user fills in the password
 And the user clicks the login button
     [Documentation]    And the user clicks the login button
     Should Click Login Button
+
+Given the user is logged in
+    [Documentation]    Given the user is logged in
+    Should Validate Login Page Loaded
+    Should Fill Username
+    Should Fill Password
+    Should Click Login Button
