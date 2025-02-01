@@ -5,7 +5,7 @@ Resource            ../resources/features/sauce_demo/cart_page_keywords.resource
 Resource            ../resources/features/sauce_demo/login_page_keywords.resource
 Resource            ../resources/features/sauce_demo/products_page_keywords.resource
 
-Test Setup          Open Browser And Navigate To Testing The URL    ${SAUCE_DEMO_URL}
+Test Setup          Open Browser And Navigate To The Testing URL    ${SAUCE_DEMO_URL}
 
 
 *** Test Cases ***
