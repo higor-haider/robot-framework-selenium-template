@@ -1,4 +1,4 @@
-# RobotFramework Web Template
+# RobotFramework Selenium Template
 
 This repository provides a template for web automation using Robot Framework and Selenium. It includes predefined keywords, test cases, and resources to help you get started quickly with web testing.
 
