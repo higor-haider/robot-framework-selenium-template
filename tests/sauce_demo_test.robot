@@ -21,8 +21,16 @@ Login And Validate Products Page
 Add A Product To The Cart And Validate That Product Is In The Cart
     [Documentation]    This test case adds a product to the cart and validates that the product is in the cart
     [Tags]    sauce-demo
-    Given Given the user is logged in
+    Given the user is logged in
     When the user chooses a product and adds it to the cart
     And the user clicks the cart button
     Then the user is taken to the cart page
-    And the cart has the choosen product
+    And the cart has the chosen product
+
+Remove A Product From The Cart And Validate That Product Is Not In The Cart
+    [Documentation]    This test case removes a product from the cart and validates that the product is not in the cart
+    [Tags]    sauce-demo
+    Given the user is logged in
+    And the cart has at least one product
+    When the user removes all the products from the cart
+    Then the cart is empty

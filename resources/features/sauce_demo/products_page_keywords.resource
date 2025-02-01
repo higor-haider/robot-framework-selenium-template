@@ -32,3 +32,9 @@ When the user chooses a product and adds it to the cart
 And the user clicks the cart button
     [Documentation]    And the user clicks the cart button
     Should Click Cart Button
+
+And the cart has at least one product
+    [Documentation]    And the cart has at least one product
+    Should Validate Products Page Loaded
+    Should Add Sauce Labs Backpack To Cart
+    Should Click Cart Button

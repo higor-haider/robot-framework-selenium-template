@@ -17,10 +17,23 @@ Should Validate Cart Has Product
     ${product_name}    Get Text    ${PRODUCT_TEXT}
     Should Be Equal As Strings    ${product_name}    Sauce Labs Backpack
 
+Should Click Remove Product Button
+    [Documentation]    Clicks the remove product button
+    Wait Until Element Is Visible    ${REMOVE_PRODUCT_BUTTON}
+    Click Button    ${REMOVE_PRODUCT_BUTTON}
+
 Then the user is taken to the cart page
     [Documentation]    Then the user is taken to the cart page
     Should Validate Cart Page Loaded
 
 And the cart has the chosen product
-    [Documentation]    And the cart has the choosen product
+    [Documentation]    And the cart has the chosen product
     Should Validate Cart Has Product
+
+When the user removes all the products from the cart
+    [Documentation]    When the user removes all the products from the cart
+    Should Click Remove Product Button
+
+Then the cart is empty
+    [Documentation]    Then the cart is empty
+    Wait Until Element Is Not Visible    ${PRODUCT_TEXT}
