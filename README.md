@@ -11,31 +11,22 @@ This repository provides a template for web automation using Robot Framework and
 
 ## Getting Started
 
-1. `Python` version `3.12.2` or higher installed and added to `PATH`
-    - In your shell run the command `python --version` to confirm the installation
-    - Expected output: `Python 3.x.x`
+1. Ensure `Python` and `pip` are installed and added to `PATH`
+    - Confirm installation by running `python --version` and `pip --version` in your shell
 
-    > Tutorial access [Installing Python](https://python.org.br/instalacao-windows/)
+2. Install project dependencies
+    - Run `pip install -r requirements.txt` from the project root
 
-2. `pip` version `24.0` or higher installed
-    - In your shell run the command `pip --version` to confirm the installation
-    - Expected output: `pip 24.0 from...`
+3. Ensure `Robot Framework` is installed
+    - Confirm installation by running `robot --version` in your shell
 
-    > Note: pip is installed together with Python
+### Running the tests
 
-3. Install `Python` dependencies directly from the project root using the command `pip install -r requirements.txt`
+To run the tests, execute the following command in your shell:
 
-4. `Robot Framework` version `7.0` or higher installed
-    - In your shell run the command `robot --version` to confirm the installation
-    - Expected output: `Robot Framework 7.0`
-
-    > Tutorial access [Installing Robot Framework](https://robotframework.org/robotframework/latest/RobotFrameworkUserGuide.html#installing-and-uninstalling-robot-framework)
-
-### Running the tests using the command line
-
-To run the tests using the command line you just need to execute the commands as follows:
-
-> Command: `robot -d ./out tests`
+```sh
+robot -d ./out tests
+```
 
 ### Running the tests using Visual Studio Code
 
