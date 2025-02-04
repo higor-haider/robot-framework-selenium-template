@@ -21,19 +21,19 @@ Should Click Cart Button
     Wait Until Element Is Visible    ${CART_BUTTON}
     Click Link    ${CART_BUTTON}
 
-Then the user is taken to the products page
+the user is taken to the products page
     [Documentation]    Then the user is taken to the products page
     Should Validate Products Page Loaded
 
-When the user chooses a product and adds it to the cart
+the user chooses a product and adds it to the cart
     [Documentation]    When the user chooses a product and adds it to the cart
     Should Add Sauce Labs Backpack To Cart
 
-And the user clicks the cart button
+the user clicks the cart button
     [Documentation]    And the user clicks the cart button
     Should Click Cart Button
 
-And the cart has at least one product
+the cart has at least one product
     [Documentation]    And the cart has at least one product
     Should Validate Products Page Loaded
     Should Add Sauce Labs Backpack To Cart

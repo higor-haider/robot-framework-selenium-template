@@ -31,23 +31,23 @@ Should Click Login Button
     Wait Until Element Is Visible    ${LOGIN_BUTTON}
     Click Element    ${LOGIN_BUTTON}
 
-Given the login page is loaded
+the login page is loaded
     [Documentation]    Given the login page is loaded
     Should Validate Login Page Loaded
 
-When the user fills in the username
+the user fills in the username
     [Documentation]    When the user fills in the username
     Should Fill Username
 
-And the user fills in the password
+the user fills in the password
     [Documentation]    And the user fills in the password
     Should Fill Password
 
-And the user clicks the login button
+the user clicks the login button
     [Documentation]    And the user clicks the login button
     Should Click Login Button
 
-Given the user is logged in
+the user is logged in
     [Documentation]    Given the user is logged in
     Should Validate Login Page Loaded
     Should Fill Username

@@ -100,11 +100,11 @@ Should Validate Uploaded File Successfully
     ${status}    Get Text    ${SINGLE_FILE_STATUS_TEXT}
     Should Contain    ${status}    Single file selected: google.pdf
 
-Given the user has the home page loaded
+the user has the home page loaded
     [Documentation]    Given the user has the home page loaded
     Should Validate Page Loaded
 
-When the user fills the GUI elements form
+the user fills the GUI elements form
     [Documentation]    When the user fills the gui elements form
     Should Fill Name
     Should Fill Email
@@ -120,7 +120,7 @@ When the user fills the GUI elements form
     Should Click Submit Button
     Should Upload File
 
-Then the user can validate the form is filled correctly
+the user can validate the form is filled correctly
     [Documentation]    Then the user can validate the form is filled correctly
     Should Validate Days Between Range
     Should Validate Uploaded File Successfully
